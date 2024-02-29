@@ -8,7 +8,7 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'vivo社区Dp工具',
+      name: 'Deeplink工具',
       component: Deeplink
     },
     {
