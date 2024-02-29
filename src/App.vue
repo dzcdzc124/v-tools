@@ -4,16 +4,18 @@ import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <header class="bg-light mx-3">
+    <div class="row"> 
+      <img alt="logo" class="logo" src="/logo.png"/>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <div class="wrapper">
+        <HelloWorld class="text-secondary" msg="" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+        <nav>
+          <RouterLink to="/">DeepLink工具</RouterLink>
+          <RouterLink to="/about">关于</RouterLink>
+        </nav>
+      </div>
     </div>
   </header>
 
@@ -23,12 +25,15 @@ import HelloWorld from './components/HelloWorld.vue'
 <style scoped>
 header {
   line-height: 1.5;
-  max-height: 100vh;
+  min-height: 100vh;
 }
 
 .logo {
   display: block;
   margin: 0 auto 2rem;
+  width: 160px;
+  height: 42px;
+  padding: 0;
 }
 
 nav {
@@ -60,11 +65,7 @@ nav a:first-of-type {
   header {
     display: flex;
     place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
+    /*padding-right: calc(var(--section-gap) / 3);*/
   }
 
   header .wrapper {
@@ -74,7 +75,6 @@ nav a:first-of-type {
   }
 
   nav {
-    text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
 
