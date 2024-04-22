@@ -7,7 +7,7 @@ import Nav from './components/nav.vue'
 
 <template>
   <Nav></Nav>
-  <header class="bg-light mx-3">
+  <!--<header class="bg-light mx-3">
     <div class="row"> 
       <img alt="logo" class="logo" src="/logo.png"/>
 
@@ -20,7 +20,7 @@ import Nav from './components/nav.vue'
         </nav>
       </div>
     </div>
-  </header>
+  </header>-->
 
   <RouterView />
 </template>
