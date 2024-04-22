@@ -91,9 +91,9 @@
     const topicValue = ref({ id: 0, name: ""});
 
     var templink = {
-        shareDeeplink: "space://vivo.com/deeplinkbridge?pageName=forumShareMoment&forumID={forumID}&topicId={topicId}&forumName={forumName}&topicName={topicName}",
+        shareDeeplink: "space://vivo.com/deeplinkbridge?pageName=forumShareMoment&forumID={forumID}&topicID={topicId}&forumName={forumName}&topicName={topicName}",
         shareH5link: "https://bbs.vivo.com.cn/newbbs/dynamic?forumId={forumID}&topicId={topicId}", 
-        postLongDeeplink: "space://vivo.com/deeplinkbridge?pageName=forumPostLong&forumID={forumID}&forumName={forumName}&topicId={topicId}&topicName={topicName}", 
+        postLongDeeplink: "space://vivo.com/deeplinkbridge?pageName=forumPostLong&forumID={forumID}&forumName={forumName}&topicID={topicId}&topicName={topicName}", 
         postLongH5link: "https://bbs.vivo.com.cn/newbbs/publish?forumId={forumID}&topicId={topicId}"
     };
 
@@ -128,8 +128,8 @@
             shareH5link = lodash.replace(shareH5link, "{topicId}", topicValue.value.id);
             postLongH5link = lodash.replace(postLongH5link, "{topicId}", topicValue.value.id);
         } else {
-            shareDeeplink = lodash.replace(shareDeeplink, "&topicId={topicId}", "");
-            postLongDeeplink = lodash.replace(postLongDeeplink, "&topicId={topicId}", "");
+            shareDeeplink = lodash.replace(shareDeeplink, "&topicID={topicId}", "");
+            postLongDeeplink = lodash.replace(postLongDeeplink, "&topicID={topicId}", "");
             shareH5link = lodash.replace(shareH5link, "topicId={topicId}", "");
             postLongH5link = lodash.replace(postLongH5link, "topicId={topicId}", "");
         }
