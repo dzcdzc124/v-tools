@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Deeplink from '../views/Deeplink.vue'
+import DeepLink from '../views/DeepLink.vue'
 import About from '../views/AboutView.vue'
 
 const router = createRouter({
@@ -8,8 +8,8 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Deeplink工具',
-      component: Deeplink
+      name: 'Deeplink',
+      component: DeepLink
     },
     {
       path: '/about',
