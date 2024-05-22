@@ -52,7 +52,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text small">文章DeepLink</span>
+                      <span class="input-group-text small">发文章DeepLink</span>
                     </div>
                     <input type="text" class="form-control" id="postLongDeeplink" placeholder="请先输入圈子话题信息" v-model="finallink.postLongDeeplink" readonly>
                     <div class="input-group-append">
@@ -61,7 +61,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text small">动态网页链接</span>
+                      <span class="input-group-text small">发动态H5Link</span>
                     </div>
                     <input type="text" class="form-control" id="shareH5link" placeholder="请先输入圈子话题信息" v-model="finallink.shareH5link" readonly>
                     <div class="input-group-append">
@@ -70,7 +70,7 @@
                 </div>
                 <div class="input-group mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text small">文章网页链接</span>
+                      <span class="input-group-text small">发文章H5Link</span>
                     </div>
                     <input type="text" class="form-control" id="postLongH5link" placeholder="请先输入圈子话题信息" v-model="finallink.postLongH5link" readonly>
                     <div class="input-group-append">

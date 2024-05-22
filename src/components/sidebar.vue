@@ -17,6 +17,14 @@ import { RouterLink, RouterView } from 'vue-router'
             <span class="menu-title">DeepLink工具</span>
           </RouterLink>
         </a>
+      </li> 
+      <li class="nav-item">
+        <a class="nav-link" href="javascript:void(0);">
+          <i class="mdi menu-icon mdi-link-variant"></i>
+          <RouterLink to="/zhan">
+            <span class="menu-title">悟空H5加社区参数</span>
+          </RouterLink>
+        </a>
       </li>    
       <!-- <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
@@ -56,15 +64,7 @@ import { RouterLink, RouterView } from 'vue-router'
             <li class="nav-item"> <a class="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
           </ul>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
-          <i class="mdi mdi-grid-large menu-icon"></i>
-          <span class="menu-title">Tables</span>
-          <i class="menu-arrow"></i>
-        </a>
-     
-      </li>    
+      </li>  
       <li class="nav-item">
         <a class="nav-link" data-bs-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
           <i class="mdi mdi-emoticon menu-icon"></i>
@@ -93,12 +93,7 @@ import { RouterLink, RouterView } from 'vue-router'
           </ul>
         </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./docs/documentation.html">
-          <i class="mdi mdi-file-document-box menu-icon"></i>
-          <span class="menu-title">Documentation</span>
-        </a>
-      </li> -->
+       -->
     </ul>
   </nav>
 </template>  
