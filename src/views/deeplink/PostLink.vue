@@ -4,7 +4,7 @@
 </style>
 
 <template>
-  <div class="row p-3" style="place-items: center;">
+  <div class="row p-3 postLink" style="place-items: center;">
     <div class="col-md-12 order-md-1">
       <div class="card">
         <div class="card-body">
@@ -189,7 +189,7 @@
     });
 
 
-    var btn_copy = new clipboard('.btn-copy');
+    var btn_copy = new clipboard('.postLink .btn-copy');
     console.log(btn_copy)
     btn_copy.on('success', function(e) {
         var target = e.trigger.getAttribute("data-clipboard-target");
