@@ -1,6 +1,5 @@
 <style scoped>
   @import "../../assets/vendors/mdi/css/materialdesignicons.min.css";
-  @import "./main.css";
 </style>
 
 <template>

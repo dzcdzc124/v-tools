@@ -1,6 +1,5 @@
 <style scoped>
   @import "../assets/vendors/mdi/css/materialdesignicons.min.css";
-
 </style>
 
 <template>
@@ -147,7 +146,7 @@
       margin-right: -1px;
   }
   .needs-validation .form-control {
-      font-size: 0.8rem;
+      font-size: 1rem;
   }
 
   .card .card-title {

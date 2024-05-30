@@ -8,7 +8,7 @@
         margin-right: -1px;
     }
     .result .form-control {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 </style>
 

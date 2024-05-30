@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import DeepLink from '../views/DeepLink.vue'
+
+import DeepLink from '../views/Deeplink.vue'
 import Zhan from '../views/Zhan.vue'
 
 const router = createRouter({
