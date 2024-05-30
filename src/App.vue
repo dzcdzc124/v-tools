@@ -1,57 +1,49 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 import Nav from './components/nav.vue'
+import SideBar from './components/sidebar.vue'
+
+import './assets/vendors/js/vendor.bundle.base.js'
+
+import './assets/vendors/chart.js/chart.umd.js'
+import './assets/vendors/datatables.net/jquery.dataTables.js'
+import './assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js'
+//import './assets/js/off-canvas.js'
+import './assets/js/hoverable-collapse.js'
+import './assets/js/template.js'
+import './assets/js/settings.js'
+import './assets/js/todolist.js'
+import './assets/js/dashboard.js'
+import './assets/js/proBanner.js'
+import './assets/js/jquery.cookie.js'
 
 </script>
 
+<style scoped>
+  @import "./src/assets/vendors/mdi/css/materialdesignicons.min.css";
+  @import "./src/assets/vendors/css/vendor.bundle.base.css";
+  @import "./src/assets/css/style.css";
+  @import "./src/assets/vendors/css/vendor.bundle.base.css";
+</style>
+
 <template>
-  <Nav></Nav>
-  <!--<header class="bg-light mx-3">
-    <div class="row"> 
-      <img alt="logo" class="logo" src="/logo.png"/>
-
-      <div class="wrapper">
-        <HelloWorld class="text-secondary" msg="" />
-
-        <nav>
-          <RouterLink to="/">DeepLink工具</RouterLink>
-          <RouterLink to="/about">关于</RouterLink>
-        </nav>
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <Nav></Nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">      
+      <!-- partial:partials/_sidebar.html -->
+      <SideBar></SideBar>
+      <!-- partial -->
+      <div class="main-panel bg-light">
+        <RouterView />
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
       </div>
+      <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
     </div>
-  </header>-->
-
-  <RouterView />
+  <!-- container-scroller -->
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  min-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-  width: 160px;
-  height: 42px;
-  padding: 0;
-}
-
-
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    /*padding-right: calc(var(--section-gap) / 3);*/
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
