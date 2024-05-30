@@ -238,7 +238,7 @@
       margin-right: -1px;
   }
   .result .form-control {
-      font-size: 0.4rem;
+    
   }
 
   .card .card-title {
